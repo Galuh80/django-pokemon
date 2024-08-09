@@ -24,11 +24,11 @@ Before running the library management application, make sure you have installed 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Galuh80/altech-omega-assesment.git
+   https://github.com/Galuh80/django-pokemon.git
    ```
 2. Move to directory
    ```sh
-   cd altech-omega-assesment
+   cd django-pokemon
    ```
 3. Install virtual environment
    ```sh
@@ -40,7 +40,7 @@ Before running the library management application, make sure you have installed 
    ```
 6. Install requirements
    ```sh
-   pip install -r requirments.txt
+   pip install -r install.txt
    ```
 
 <!-- USAGE EXAMPLES -->
