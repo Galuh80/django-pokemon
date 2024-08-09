@@ -1,0 +1,17 @@
+{% extends 'pokemon_app/base.html' %}
+
+{% block content %}
+<h1>Gacha Pokemon</h1>
+<form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="location" class="form-label">Enter location:</label>
+        <input type="text" name="location" id="location" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Gacha!</button>
+</form>
+
+{% if error %}
+    <p class="text-danger mt-3">{{ error }}</p>
+{% endif %}
+{% endblock %}

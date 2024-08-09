@@ -1,0 +1,6 @@
+{% extends 'pokemon_app/base.html' %}
+
+{% block content %}
+    <h1>{{ ability.name|title }}</h1>
+    <p>{{ ability.effect_entries.0.effect }}</p>
+{% endblock %}

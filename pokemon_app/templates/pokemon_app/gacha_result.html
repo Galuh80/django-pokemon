@@ -1,0 +1,9 @@
+{% extends 'pokemon_app/base.html' %}
+
+{% block content %}
+<h1>Gacha Result</h1>
+<h2>You got {{ pokemon.name|title }}!</h2>
+<img src="{{ pokemon.sprites.front_default }}" alt="{{ pokemon.name }}">
+<p>Gender: {{ gender }}</p>
+<p><a href="{% url 'pokemon_detail' pokemon.name %}" class="btn btn-primary">View Details</a></p>
+{% endblock %}
